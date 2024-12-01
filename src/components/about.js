@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import profileImage from '../assets/amine.png';
-import resume from '../assets/Mohamed_Amine_Louati_Resume_V6.pdf'; // Import the resume
+
+import resume from '../assets/Mohamed_Amine_Louati_Resume_V6.pdf'; 
 
 const About = () => {
   // Animation Variants
@@ -65,6 +66,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-lg md:text-xl text-gray-400 leading-relaxed">
+
             I’m a passionate first-year engineering student at iTeam University, exploring the exciting world of full-stack development. 
             I specialize in creating user-friendly web applications using a strong foundation in technologies like React, Laravel, and more.
             My goal is to build meaningful applications that have a positive impact on users and businesses alike.
@@ -88,6 +90,7 @@ const About = () => {
           </motion.a>
 
           {/* View Projects Button */}
+
           <motion.a
             href="#projects"
             className="bg-[#A37C5B] text-black font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-[#8C6D5F] hover:text-white transition-transform transform hover:scale-110 inline-block"
