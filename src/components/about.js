@@ -1,39 +1,31 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import profileImage from '../assets/amine.png';
-
 import resume from '../assets/Mohamed_Amine_Louati_Resume_V6.pdf'; 
-
 const About = () => {
-  // Animation Variants
   const textVariant = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeInOut" } },
   };
-
   const imageVariant = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1, transition: { duration: 1, ease: "easeInOut" } },
   };
-
   const buttonVariant = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1, transition: { duration: 1, delay: 0.5, ease: "easeInOut" } },
   };
-
   return (
     <section
       id="about"
       className="bg-gradient-to-r from-gray-900 via-black to-black text-gray-300 min-h-screen py-16 flex items-center relative overflow-hidden"
     >
-      {/* Dynamic Background Effects */}
-      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0">
         <div className="absolute w-96 h-96 bg-[#A37C5B] rounded-full opacity-20 blur-3xl top-10 left-10 animate-pulse"></div>
         <div className="absolute w-80 h-80 bg-[#8C6D5F] rounded-full opacity-20 blur-2xl bottom-20 right-20 animate-pulse"></div>
       </div>
 
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center space-y-12 md:space-y-0 z-10">
-        {/* Left: Profile Image */}
         <motion.div
           className="md:w-1/2 flex justify-center md:justify-start"
           initial="hidden"
@@ -53,8 +45,6 @@ const About = () => {
             <div className="absolute inset-0 rounded-lg border-4 border-transparent group-hover:border-[#A37C5B] transition-all duration-300"></div>
           </div>
         </motion.div>
-
-        {/* Right: Text Content */}
         <motion.div
           className="md:w-1/2 text-center md:text-left space-y-6"
           initial="hidden"
@@ -88,9 +78,6 @@ const About = () => {
           >
             Download My Resume
           </motion.a>
-
-          {/* View Projects Button */}
-
           <motion.a
             href="#projects"
             className="bg-[#A37C5B] text-black font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-[#8C6D5F] hover:text-white transition-transform transform hover:scale-110 inline-block"
